@@ -40,7 +40,6 @@ p{
 
 article{
     background-color: grey;
-    margin-bottom: 60px;
 }
 
 aside{
@@ -60,13 +59,17 @@ aside h2{
     margin-bottom: 30px;
 }
 
+button {
+    font-size: 18px;
+    font-weight: bold;
+    color: blueviolet;
+    background-color: #17db17;
+    padding: 10px;
+
+}
+
 footer{
     margin: 30px;
-}
-.read-more {
-    padding: 10px;
-    margin: 10px;
-    color: whitesmoke;
 }
 /* Styling Links */
 
@@ -96,10 +99,20 @@ nav a:link:last-child{
 }
 /* Using FlexBox */
 
+.read-more {
+    padding: 10px;
+    margin: 10px;
+    color: whitesmoke;
+}
+
+.main-box{
+    display: flex;
+    column-gap: 80px;
+}
 .main-header{
     background-color: #17db17;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -107,4 +120,27 @@ nav a:link:last-child{
 
 .main-p{
     padding: 10px 20px 
+}
+
+.main-article{
+    margin-bottom: 50px;
+}
+
+.main-aside{
+    flex: 0 0 300px;
+}
+
+.links{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-top: 10px;
+    display: inline-block;
+
+}
+
+.recent-post{
+    margin-bottom: 30px;
 }
