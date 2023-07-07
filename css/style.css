@@ -38,6 +38,10 @@ p{
     line-height: 22px;
 }
 
+main{
+    flex: 1;
+}
+
 article{
     background-color: grey;
 }
@@ -107,6 +111,7 @@ nav a:link:last-child{
 
 .main-box{
     display: flex;
+    align-items: flex-start;
     column-gap: 80px;
 }
 .main-header{
