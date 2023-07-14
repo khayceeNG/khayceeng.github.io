@@ -73,7 +73,9 @@ button {
 }
 
 footer{
-    margin: 30px;
+    text-align: center;
+    background-color: #17db17;
+    grid-column: 1 / -1 ;
 }
 /* Styling Links */
 
@@ -86,7 +88,7 @@ a:visited{
     color:  blueviolet;
 }
 a:hover{
-    color: #17db17;
+    color: white;
 }
 
 a:active{
@@ -100,6 +102,12 @@ nav a:link:last-child{
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    column-gap: 100px;
+    row-gap: 50px;
+    align-items: start;
 }
 /* Using FlexBox */
 
@@ -108,33 +116,47 @@ nav a:link:last-child{
     margin: 10px;
     color: whitesmoke;
 }
+/* USING FLEXBOX AS CONTAINER
 
 .main-box{
     display: flex;
     align-items: flex-start;
     column-gap: 80px;
 }
+*/
+
+
+
+
+
 .main-header{
     background-color: #17db17;
     padding: 20px;
-    margin-bottom: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+.post-header{
+    grid-column: 1 /span 2;
+    
+}
+
 
 .main-p{
     padding: 10px 20px 
 }
 
 .main-article{
-    margin-bottom: 50px;
+    row-gap: 20px;
 }
+
+/* USING FLEX FOR ASIDE
 
 .main-aside{
     flex: 0 0 300px;
 }
-
+*/
 .links{
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
